@@ -1,0 +1,69 @@
+/* Body styles: Set up the overall layout and design */
+body {
+    font-family: Arial, sans-serif; /* Apply a sans-serif font family */
+    display: flex; /* Use Flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Arrange items in a column layout */
+    background-color: #f0f0f0; /* Light grey background color */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around the body */
+}
+
+/* Style for the main heading */
+h1 {
+    font-size: 2em; /* Make the heading font size larger */
+    color: #333; /* Dark grey color for the heading text */
+}
+
+/* Gallery container styles */
+#gallery {
+    max-width: 1200px; /* Set maximum width for the gallery container */
+    text-align: center; /* Center-align text within the gallery section */
+}
+
+/* Styles for the figure element (used for the main image and caption) */
+figure {
+    margin: 0; /* Remove margin around the figure */
+    padding: 0; /* Remove padding around the figure */
+    border: 2px solid #ddd; /* Light grey border around the image */
+}
+
+/* Style for the image caption */
+figcaption {
+    font-size: 1.2em; /* Set font size for the caption */
+    color: #555; /* Medium grey color for the caption text */
+    margin-top: 8px; /* Add some space above the caption */
+}
+
+/* Style for the unordered list that will hold gallery thumbnails */
+ul {
+    list-style: none; /* Remove default bullet points from the list */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use Flexbox to arrange the list items horizontally */
+    gap: 10px; /* Add space between list items */
+    justify-content: center; /* Center-align the list items horizontally */
+    margin-top: 20px; /* Add some space above the list */
+}
+
+/* Style for each list item (thumbnail) */
+ul li {
+    cursor: pointer; /* Change the cursor to a pointer when hovering over a thumbnail */
+}
+
+/* Style for the images in the list items */
+ul li img {
+    transition: filter 0.3s ease; /* Smooth transition for filter effect */
+    border: 2px solid transparent; /* Initial border set to transparent */
+    border-radius: 4px; /* Rounded corners for the images */
+}
+
+/* Style for inactive images (grayscale) */
+ul li img.inactive {
+    filter: grayscale(100%); /* Apply grayscale filter to inactive images */
+}
+
+/* Style for hovered images */
+ul li img:hover {
+    border-color: #333; /* Change border color to dark grey when hovering over an image */
+}
